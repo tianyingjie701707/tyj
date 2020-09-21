@@ -249,3 +249,12 @@ finally:
 
 print("文件已经打开")
 
+def random_name():
+    xing_list = ["赵","钱","孙","李","周","武","郑","王","欧阳","诸葛","轩辕","上官","司徒"]
+    zi_list = "花赤橙黄绿青蓝紫冬梅建国华世凯"
+    xing = random.choice(xing_list)
+    zi_length = random.randint(1,2)
+    zi = random_str(zi_list,zi_length)
+    return xing + zi
+
+print(random_name())
